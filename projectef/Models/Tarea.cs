@@ -5,14 +5,14 @@ namespace projectef.Models
 {
     public class Tarea
     {
-        [Key]
+        //[Key]
         public Guid tareaId {  get; set; }
 
-        [ForeignKey("categoriaId")]
+        //[ForeignKey("categoriaId")]
         public Guid categoriaId { get; set; }
 
-        [Required]
-        [MaxLength(200)]
+        //[Required]
+        //[MaxLength(200)]
         public string titulo { get; set; }
 
         public string descripcion { get; set; }
