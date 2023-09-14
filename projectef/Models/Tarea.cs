@@ -11,6 +11,8 @@ namespace projectef.Models
         [ForeignKey("categoriaId")]
         public Guid categoriaId { get; set; }
 
+        [Required]
+        [MaxLength(200)]
         public string titulo { get; set; }
 
         public string descripcion { get; set; }
@@ -20,6 +22,9 @@ namespace projectef.Models
         public DateTime fechaCreacion { get; set; }
 
         public virtual Categoria categoria { get; set; }
+
+        [NotMapped]
+        public string resumen { get; set; }
 
     }
 
